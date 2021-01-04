@@ -1,0 +1,69 @@
+/* adding the  background images */
+*{
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+.slide1{
+    background-image: url('https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+}
+.slide2{
+    background-image: url('https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+}
+.slide3{
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80');
+}
+.slide4{
+    background-image: url('https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80');
+}
+.slide5{
+    background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+}
+
+/* the actual css style */
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.container{
+    margin: auto;
+    width: 85vw;
+    height: 80vh;
+    background-image: cover 100%;
+    display: flex;
+    flex: 1;
+}
+.slide{
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    border-radius: 30px;
+    position: relative;
+    transition: flex 350ms ease-in;
+    cursor: pointer;
+}
+h3{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0%;
+}
+.active{
+    flex: 7;
+}
+.active > h3{
+    transition: opacity 300ms 400ms ease-out ;
+    opacity: 1;
+}
+@media(min-width : 2400px){
+    .container{
+        width: 60vw;
+    }
+}
+@media(max-width: 700px){
+    .container{
+        flex-direction: column;
+    }
+}
+
