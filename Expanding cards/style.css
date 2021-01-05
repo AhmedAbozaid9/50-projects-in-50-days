@@ -40,7 +40,7 @@ body{
     flex-grow: 1;
     border-radius: 30px;
     position: relative;
-    transition: flex 350ms ease-in;
+    transition: flex 600ms ease-in;
     cursor: pointer;
 }
 h3{
