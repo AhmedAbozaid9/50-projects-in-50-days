@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#fca3cc,#fbbedf);
+}
+.conntainer{
+    position: relative;
+}
+input{
+    width: 50px;
+    height: 50px;
+    border: none;
+    padding: 2px;
+    transition: width 300ms ease-in;
+}
+button{
+    width: 52px;
+    height: 52px;
+    background-color: #ffffff;
+    border: none;
+    position: absolute;
+    transform: translateX(-52px);
+    cursor: pointer;
+    font-size: 20px;
+}
+*:focus{
+    outline: none;
+}
+button:focus{
+    background-color: rgb(235, 235, 235);
+    transition: background-color 300ms ease;
+}
+/* when the button clicked */
+.container.clicked button{
+    transition: transform 300ms ease;
+}
+.container.clicked input{
+    width: 200px;
+}
