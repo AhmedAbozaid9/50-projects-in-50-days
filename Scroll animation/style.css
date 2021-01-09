@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    background-color: rgb(85, 200, 245);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+}
+h1{
+    margin: 3rem;
+}
+.container{
+    margin: 10px;
+    width: 400px;
+    height: 170px;
+    background-color: rgb(34, 82, 136);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(400%);
+    transition: transform 500ms ease;
+}
+.container:nth-of-type(even){
+    transform: translateX(-400%);
+}
+.container.show{
+    transform: translateX(0);
+}
