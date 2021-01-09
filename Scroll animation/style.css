@@ -9,6 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     color: #333333;
+    overflow-x: hidden;
 }
 h1{
     margin: 3rem;
