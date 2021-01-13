@@ -1,0 +1,37 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background-image: linear-gradient(pink,rgb(245, 133, 152));
+    height: 100vh;
+}
+.container{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.btn{
+    border: none;
+    background-color: rgb(155, 72, 233);
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-family: inherit;
+    margin: 0.5rem;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 100ms ease-in-out;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.btn:focus{
+    outline: none;
+}
+.btn:active{
+    transform: scale(0.97);
+}
