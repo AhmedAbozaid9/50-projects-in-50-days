@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+    height: 80vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: steelblue;
+    color: white;
+    font-family: lato;
+}
+form{
+    background-color: rgba(0, 0, 0, 0.158);
+    padding: 3rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+input{
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    margin-bottom: 3rem;
+    position: relative;
+    color: white;
+}
+*:focus{
+    outline: none;
+}
+button{
+    display: inline-block;
+    width: 100%;
+    margin: 1rem 0;
+    height: 3rem;
+    font-size: 2rem;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: lightblue;
+    border-radius: 5px;
+    font-family: inherit;
+}button:hover{
+    background-color: rgb(194, 239, 253);
+}
+button:active{
+    transform: scale(0.98);
+}
+form p a{
+    text-decoration: none;
+    color: lightblue;
+}
+label{
+    position: absolute;
+    transform: translateY(-5.5rem);
+}
+span{
+    transition: color 300ms linear,transform 200ms linear;
+    display: inline-block;
+}
+
+
+input:focus + label span{
+    color: lightblue;
+    transform: translateY(-2rem);
+}
+input:focus{
+    border-color: lightblue;
+}
