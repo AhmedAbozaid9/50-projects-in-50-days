@@ -1,0 +1,27 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.key{
+    border: 2px solid rgb(214, 214, 214);
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    margin: 20px;
+    min-width: 150px;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+.key > small{
+    position: absolute;
+    top: -40px;
+}
