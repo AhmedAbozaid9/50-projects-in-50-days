@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'lato';
+    color: #333333;
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    z-index: 0;
+}
+h1{
+    margin: 3rem;
+    text-align: center;
+}
+.faq-container{
+    max-width: 600px;
+    margin: 1rem auto;
+
+}
+.faq{
+    background-color: white;
+    overflow: hidden;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin: 2rem 0;
+    padding: 3rem 2rem;
+    position: relative;
+    cursor: pointer;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+h3{
+    margin-top: 0;
+}
+p{
+    font-size: 1.3rem;
+}
+.faq::after, .faq::before {
+    content: '\f075';
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    font-size: 7rem;
+    opacity: .3;
+    z-index: 0;
+    color: rgb(105, 172, 4);
+    top: 30px;
+    left: 30px;
+    display: none;
+}
+.faq-text{
+    display: none;
+}
+.faq::after{
+    color: rgb(75, 75, 223);
+    top: -10px;
+    left: -40px;
+    transform: rotateY(180deg);
+}
+.faq-toggle{
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+.faq-toggle .fa-times {
+    display: none;
+  }
+.faq-toggle:focus{
+    outline: none;
+}
+/* adding the active class */
+.faq.active::before,.faq.active::after,.faq.active .faq-text,.faq.active .faq-toggle .fa-times{
+    display: block;
+}
+.faq.active .faq-toggle .fa-chevron-down{
+    display: none;
+}
