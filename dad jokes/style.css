@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
+body{
+    margin: 0;
+    background-color: rgb(212, 94, 94);
+    font-family: 'Noto Sans JP';
+    font-size: 2rem;
+}
+.container{
+    background-color: #ffffff;
+    width: 70%;
+    max-width: 800px;
+    min-width: 400px;
+    text-align: center;
+    margin: auto;
+    margin-top: 7rem;
+    padding: 2rem;
+    border-radius: 10px;
+
+}
+h3{
+    margin: 0%;
+    opacity: 0.6;
+}
+.getJoke{
+    border: none;
+    background-color: rgb(241, 50, 50);
+    color: white;
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.getJoke:focus{
+    outline: none;
+}
+.getJoke:active{
+    transform: scale(0.98);
+}
