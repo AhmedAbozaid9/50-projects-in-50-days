@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+ body{
+     font-family: 'mulish';
+     margin: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color: aliceblue;
+     background-image: linear-gradient(to bottom,
+     rgb(200, 235, 255) 0%,
+     rgb(200, 235, 255) 50%,
+     rgb(63, 155, 209) 50%,
+     rgb(63, 155, 209) 100%
+     );
+ }
+ nav{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: white;
+     padding: 10px;
+     border-radius: 3px;
+     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+     width: 80px;
+     transition: width 600ms linear;
+ }
+ nav.active{
+     width: 350px;
+ }
+ nav ul{
+     display: flex;
+     list-style: none;
+     padding: 0;
+     margin: 0%;
+     width: 0%;
+     transition: width 600ms linear;
+ }
+ nav.active ul{
+     width: 100%;
+ }
+ nav ul li{
+     margin: 0 10px;
+     transform: rotateY(0deg);
+     opacity: 0;
+    transition: transform 600ms linear,opacity 600ms linear;
+ }
+ nav.active ul li{
+     transform: rotateY(360deg);
+     opacity: 1;
+ }
+ nav ul li a{
+     color: #333333;
+     text-decoration: none;
+ }
+ .toggler{
+      background-color: white;
+      width: 30px;
+      height: 30px;
+      position: relative;
+      cursor: pointer;
+      border: none;
+ }
+ .toggler:focus{
+     outline: none;
+ }
+ .toggler .line{
+     width: 20px;
+     height: 2px;
+     background-color: rgb(67, 187, 243);
+     position: absolute;
+     top: 10px;
+     left: 5px;
+     transition: transform 600ms linear;
+ }
+ .toggler .line2{
+     top: auto;
+     bottom: 10px;
+ }
+ nav.active .toggler .line1{
+     transform: rotate(-765deg) translateY(5.5px);
+ }
+ nav.active .toggler .line2{
+     transform: rotate(765deg) translateY(-5.5px);
+ }
