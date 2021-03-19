@@ -1,0 +1,38 @@
+*:focus{
+    outline:none;
+}
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #333;
+}
+button{
+    border: none;
+    background-color: palevioletred;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 25px;
+    border-radius: 2px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+.circle{
+    position: absolute;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    animation: scale 0.3s ease-in;
+}
+@keyframes scale{
+    to{
+        transform: translate(-50%,-50%) scale(3);
+        opacity: 0;
+    }
+}
