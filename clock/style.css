@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+body{
+    font-family: 'Heebo';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+}
+.clockContainer{
+    width: 250px;
+    height: 250px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 2rem;
+    position: relative;
+}
+.clockContainer .needle{
+    position: absolute;
+    width: 3px;
+    height: 100px;
+    background-color: rgb(241, 241, 241);
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: translate(-50%,-100%);
+    border-radius: 50px 50px 0 0;
+
+}
+.needle.hour{
+    height: 65px;
+    transform: translate(-50%,-100%);
+}
+.needle.second{
+    background-color: rgb(182, 17, 17);
+    height: 110px;
+    transform: translate(-50%,-100%);
+}
+.circle{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.circle::before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+.time{
+    font-size: 2.5rem;
+    font-weight: 550;
+}
